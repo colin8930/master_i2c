@@ -229,7 +229,7 @@ int main(){
 			USART1_puts("\r\nsend  ");
 			USART_SendData(USART1, data);
 			USART1_puts("\r\n");
-			I2C_WRITEOneByte(0x05, data);
+			I2C_WRITEOneByte(0x04, data);
 			data++;
 			if(data==0x7E) data=0x30;		
 			
